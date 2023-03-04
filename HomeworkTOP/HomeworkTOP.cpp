@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 #include <math.h>
 #include <string>
-#include "HomeworkTOP2.cpp"
 
 int m_pow(const int& value, const int& degree) {
     int result{ 1 };
