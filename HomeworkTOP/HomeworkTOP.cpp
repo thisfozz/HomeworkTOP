@@ -108,6 +108,7 @@ int binarySearch(int* array, int min, int max) {
         break;
     case '=':
         std::cout << "Value is find: " << mid;
+
         return 1;
 
         break;
@@ -146,20 +147,19 @@ int main()
         break;
     case 2:
         system("cls");
-
+        
         std::cout << "Binary Search. ";
         std::cout << "\nMake a number in your mind.";
 
         std::cout << "\nEnter range: ";
         std::cout << "\nBegin = "; std::cin >> begin;
         std::cout << "\nEnd = "; std::cin >> end;
+        int* arrayForBinary = new int[end];
 
         system("cls");
 
-        fillArrayLinear(array, SIZE);
-        binarySearch(array, begin, end);
-        break;
-    default:
+        fillArrayLinear(arrayForBinary, end);
+        binarySearch(arrayForBinary, begin, end);
         break;
     }
 }
